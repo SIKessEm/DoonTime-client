@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../widgets/MainHeader'
 import Footer from '../widgets/MainFooter'
-import '../designs/Main.scss'
+import '../designs/Document.scss'
 
 class DocumentFound extends React.Component {
 

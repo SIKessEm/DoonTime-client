@@ -1,5 +1,6 @@
 import {Fragment} from 'react'
 import NavBar from '../widgets/NavBar'
+import '../designs/Document.scss'
 
 export default function ErrorDocument({code}) {
   return (
