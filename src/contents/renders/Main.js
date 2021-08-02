@@ -5,14 +5,18 @@ import './Main.scss'
 
 export default function Main({Layout}) {
   return (
-    <div className="Main">
-      <Header/>
-      <div className="App-main container">
-        <main className="container">
+    <div className="Main container">
+      <div className="row row-cols-1">
+        <div className="col align-self-start">
+          <Header/>
+        </div>
+        <div className="col align-self-center">
           <Layout/>
-        </main>
+        </div>
+        <div className="col align-self-end">
+          <Footer/>
+        </div>
       </div>
-      <Footer/>
     </div>
   );
 }

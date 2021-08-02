@@ -6,8 +6,8 @@ export default function MainHeader() {
     <Fragment>
       <div className="Main-header">
         <header>
-          <img src={logo} className="Main-logo" alt="icon"/>
-        <h1><a className="Main-link" href="https://sikessem.com" target="_blank" rel="noopener noreferrer">SIKessEm</a> DoonTime</h1>
+          <p className="pt-3"><img src={logo} className="Main-logo" alt="icon"/></p>
+          <h1 className="h3"><a className="Main-link" href="https://sikessem.com" target="_blank" rel="noopener noreferrer">SIKessEm</a> DoonTime</h1>
         </header>
       </div>
     </Fragment>
