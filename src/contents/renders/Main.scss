@@ -1,5 +1,13 @@
 @import "~bootstrap/scss/bootstrap";
 
+.content-fit {
+  width: fit-content;
+}
+
+img[data-fit] {
+  object-fit: attr(data-fit);
+}
+
 .Main {
   text-align: center;
 }
