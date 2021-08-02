@@ -10,7 +10,7 @@ export default function Router({Render, routes}) {
         key={`route${index}`}
         path={route.path}
         exact={route.exact || true}>
-          <Render Layout={route.layout}/>
+          <Render Layout={route.layout} title={route.title}/>
         </Route>
         ))}
       </Switch>
