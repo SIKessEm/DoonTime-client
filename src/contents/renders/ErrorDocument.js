@@ -1,21 +1,39 @@
-import {Fragment} from 'react'
-import NavBar from '../widgets/NavBar'
+import React from 'react'
+import {Container} from 'react-bootstrap'
 import '../designs/Document.scss'
 
-export default function ErrorDocument({code}) {
+class ErrorDocument extends React.Component {
+
+  componentDidMount() {
+    switch (this.props.code) {
+      case 404:
+        document.title = 'Not found'
+        break;
+
+      default:
+        document.title = `Error document ${this.props.code}`
+        break;
+    }
+  }
+
+  _404() {
+    return (
+      <Container fluid={true} className="bg-dark text-light">
+        <main className="d-flex flex-column justify-content-center align-items-center">
+          <h1 className="mt-5 mb-2">Error document {this.props.code}</h1>
+          <div>
+            <p>Document not found</p>
+          </div>
+        </main>
+      </Container>
+    );
+  }
+
+  render () {
   return (
-    <Fragment>
-      <NavBar/>
-      <div className="ErrorDocument">
-        <div className="App-main container">
-          <main className="container">
-            <h1>Error {code}</h1>
-            <div>
-                <p>Document not found</p>
-            </div>
-          </main>
-        </div>
-      </div>
-    </Fragment>
+    this[`_${this.props.code}`]()
   );
-};
+ }
+}
+
+export default ErrorDocument
