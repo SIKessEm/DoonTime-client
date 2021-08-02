@@ -9,7 +9,7 @@ export default function Router({Render, routes}) {
         <Route
         key={`route${index}`}
         path={route.path}
-        exact={route.exact}>
+        exact={route.exact || true}>
           <Render Layout={route.layout}/>
         </Route>
         ))}

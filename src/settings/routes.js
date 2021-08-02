@@ -12,17 +12,14 @@ export const routes = [
     routes: [
       {
         path: "/",
-        exact: true,
         layout: Home
       },
       {
         path: "/learning-more",
-        exact: true,
         layout: LearnMore
       },
       {
         path: "/getting-started",
-        exact: true,
         layout: GetStarted
       }
     ]
