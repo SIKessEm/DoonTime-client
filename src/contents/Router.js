@@ -1,7 +1,11 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 
+import routes from './routes'
 
-export default function Router({Render, routes}) {
+import DocumentFound from './renders/DocumentFound'
+import ErrorDocument from './renders/ErrorDocument'
+
+export default function Router() {
   return (
     <BrowserRouter>
       <Switch>
@@ -10,9 +14,12 @@ export default function Router({Render, routes}) {
         key={`route${index}`}
         path={route.path}
         exact={route.exact || true}>
-          <Render Layout={route.layout} title={route.title}/>
+          <DocumentFound Layout={route.layout} title={route.title}/>
         </Route>
         ))}
+        <Route>
+          <ErrorDocument code={404}/>
+        </Route>
       </Switch>
     </BrowserRouter>
   );
