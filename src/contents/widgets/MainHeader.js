@@ -6,8 +6,7 @@ export default function MainHeader() {
     <Fragment>
       <div className="Main-header">
         <header>
-          <p className="pt-3"><img src={logo} className="Main-logo" alt="icon"/></p>
-          <h1 className="h3"><a className="Main-link" href="https://sikessem.com" target="_blank" rel="noopener noreferrer">SIKessEm</a> DoonTime</h1>
+          <h1 className="h3 pt-3"><a className="Main-link" href="/" title={process.env.REACT_APP_WEBSITE_FULLNAME}><img src={logo} className="Main-logo" alt={process.env.REACT_APP_WEBSITE_SHORTNAME}/></a></h1>
         </header>
       </div>
     </Fragment>

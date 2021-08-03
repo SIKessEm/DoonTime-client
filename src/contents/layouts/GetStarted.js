@@ -7,7 +7,7 @@ export default function Home(){
     <Fragment>
       <Container className="pt-5 d-flex w-100 h-100 text-center justify-content-center flex-column">
         <main>
-          <h1 className="pb-3">Get started on DoonTime</h1>
+          <h1 className="pb-3">Get started on {process.env.REACT_APP_WEBSITE_SHORTNAME}</h1>
         <p className="lead"><Link exact to="/connection">Log in</Link> or <Link exact to="/registration">sign up for free</Link> to take advantage of Doontime</p>
           <Form>
             <Row className="flex-column">

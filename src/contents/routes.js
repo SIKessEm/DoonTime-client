@@ -7,27 +7,27 @@ import SignUp from './layouts/SignUp'
 const routes = [
   {
     path: "/",
-    title: "DoonTime",
+    title: process.env.REACT_APP_WEBSITE_SHORTNAME,
     layout: Home
   },
   {
     path: "/learning-more",
-    title: "DoonTime: Learn more",
+    title: `${process.env.REACT_APP_WEBSITE_SHORTNAME}: Learn more`,
     layout: LearnMore
   },
   {
     path: "/getting-started",
-    title: "DoonTime: Get started",
+    title: `${process.env.REACT_APP_WEBSITE_SHORTNAME}: Get started`,
     layout: GetStarted
   },
   {
     path: "/connection",
-    title: "DoonTime: Connect",
+    title: `${process.env.REACT_APP_WEBSITE_SHORTNAME}: Connect`,
     layout: LogIn
   },
   {
     path: "/registration",
-    title: "DoonTime: Register",
+    title: `${process.env.REACT_APP_WEBSITE_SHORTNAME}: Register`,
     layout: SignUp
   }
 ]
