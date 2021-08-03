@@ -21,13 +21,13 @@ const routes = [
     layout: GetStarted
   },
   {
-    path: "/LogIn",
-    title: "DoonTime: Log in",
+    path: "/connection",
+    title: "DoonTime: Connect",
     layout: LogIn
   },
   {
-    path: "/SignUp",
-    title: "DoonTime: Sign up",
+    path: "/registration",
+    title: "DoonTime: Register",
     layout: SignUp
   }
 ]
