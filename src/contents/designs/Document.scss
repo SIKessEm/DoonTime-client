@@ -13,13 +13,12 @@ img[data-fit] {
 }
 
 .Main-logo {
-  height: 10vmin;
+  height: 14vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .Main-logo {
-    margin: 1% auto;
     animation: Main-logo-float infinite 3s ease-in-out;
   }
 }
