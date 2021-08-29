@@ -1,5 +1,7 @@
-import {Fragment} from 'react'
+import {React, Fragment} from 'react'
+
 import {NavLink} from 'react-router-dom'
+
 import logo from '../../logo.svg';
 
 export default function Home() {

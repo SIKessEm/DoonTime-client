@@ -1,4 +1,5 @@
-import {Fragment} from 'react'
+import {React, Fragment} from 'react'
+
 import { Button } from 'react-bootstrap'
 
 export default function Home(){

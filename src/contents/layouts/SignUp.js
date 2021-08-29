@@ -1,5 +1,7 @@
-import {Fragment} from 'react'
+import {React, Fragment} from 'react'
+
 import {Link} from 'react-router-dom'
+
 import {Container, Form, Row, Col, FloatingLabel, Button} from 'react-bootstrap'
 
 export default function Home(){
